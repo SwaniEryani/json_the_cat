@@ -12,7 +12,7 @@ request(`https://api.thecatapi.com/v1/breeds/search?q=${catName}`, (error, respo
     if (data.length > 0) {
       console.log(data[0].description);
     } else {
-      console.log("There is no such name! please try again")
+      console.log("There is no such breed! or there is no input!.please try again")
     }
   }
 });
